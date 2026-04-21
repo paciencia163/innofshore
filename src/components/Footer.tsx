@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useI18n } from "@/i18n/I18nProvider";
 import { services } from "@/data/services";
+import { Logo } from "./Logo";
 
 export const Footer = () => {
   const { t } = useI18n();
@@ -8,8 +9,8 @@ export const Footer = () => {
     <footer className="bg-abyss-deep text-primary-foreground/70 border-t border-primary-foreground/10">
       <div className="container py-12 grid md:grid-cols-4 gap-10">
         <div className="md:col-span-2">
-          <div className="font-display font-bold text-primary-foreground text-xl">INN OFFSHORE</div>
-          <p className="text-sm mt-3 max-w-sm leading-relaxed">{t("footer.tagline")}</p>
+          <Logo variant="footer" asLink={false} />
+          <p className="text-sm mt-4 max-w-sm leading-relaxed">{t("footer.tagline")}</p>
         </div>
         <div>
           <div className="text-xs uppercase tracking-widest text-accent font-medium mb-4">{t("footer.services")}</div>

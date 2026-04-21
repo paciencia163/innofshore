@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { useI18n } from "@/i18n/I18nProvider";
 import { LangToggle } from "./LangToggle";
+import { Logo } from "./Logo";
 
 export const Navbar = () => {
   const { t } = useI18n();
@@ -40,18 +41,8 @@ export const Navbar = () => {
           : "bg-transparent py-6"
       )}
     >
-      <div className="container flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 text-primary-foreground">
-          <div className="h-9 w-9 rounded-sm gradient-flame grid place-items-center font-display font-bold text-accent-foreground">
-            i
-          </div>
-          <div className="font-display font-bold tracking-tight leading-none">
-            <div className="text-base">INN OFFSHORE</div>
-            <div className="text-[10px] uppercase tracking-[0.25em] text-primary-foreground/60">
-              {t("nav.tagline")}
-            </div>
-          </div>
-        </Link>
+      <div className="container flex items-center justify-between gap-4">
+        <Logo variant="nav" />
 
         <nav className="hidden md:flex items-center gap-8">
           {links.map((l) => (

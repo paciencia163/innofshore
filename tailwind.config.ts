@@ -29,6 +29,10 @@ export default {
         },
         steel: "hsl(var(--steel))",
         foam: "hsl(var(--foam))",
+        sand: {
+          DEFAULT: "hsl(var(--sand))",
+          light: "hsl(var(--sand-light))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

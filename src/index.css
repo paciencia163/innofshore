@@ -9,54 +9,59 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    --foreground: 215 60% 8%;
+    --background: 40 25% 96%;
+    --foreground: 195 60% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 215 60% 8%;
+    --card-foreground: 195 60% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 60% 8%;
+    --popover-foreground: 195 60% 12%;
 
-    /* Deep abyss navy */
-    --primary: 215 65% 12%;
-    --primary-foreground: 30 40% 98%;
+    /* Deep teal navy — from logo "Offshore" wordmark */
+    --primary: 195 60% 15%;
+    --primary-foreground: 40 30% 96%;
 
-    /* Petroleum orange — platform red */
-    --accent: 14 88% 55%;
-    --accent-foreground: 0 0% 100%;
-    --accent-glow: 22 95% 62%;
+    /* Teal/petroleum — from logo droplet & "in" mark */
+    --accent: 175 75% 25%;
+    --accent-foreground: 40 30% 96%;
+    --accent-glow: 175 65% 35%;
 
-    --secondary: 210 30% 94%;
-    --secondary-foreground: 215 60% 12%;
+    /* Sand/beige — from logo circle */
+    --sand: 35 30% 70%;
+    --sand-light: 35 35% 82%;
 
-    --muted: 210 25% 92%;
-    --muted-foreground: 215 20% 40%;
+    --secondary: 35 25% 90%;
+    --secondary-foreground: 195 60% 15%;
+
+    --muted: 35 20% 92%;
+    --muted-foreground: 195 20% 35%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 215 25% 88%;
-    --input: 215 25% 88%;
-    --ring: 14 88% 55%;
+    --border: 35 20% 85%;
+    --input: 35 20% 85%;
+    --ring: 175 75% 25%;
 
     --radius: 0.25rem;
 
     /* Brand specifics */
-    --abyss: 215 70% 8%;
-    --abyss-deep: 215 75% 5%;
-    --steel: 210 20% 30%;
-    --foam: 200 30% 96%;
+    --abyss: 195 65% 10%;
+    --abyss-deep: 200 70% 6%;
+    --steel: 195 25% 30%;
+    --foam: 175 30% 95%;
 
     /* Gradients */
-    --gradient-abyss: linear-gradient(180deg, hsl(215 75% 5%) 0%, hsl(215 65% 12%) 100%);
-    --gradient-flame: linear-gradient(135deg, hsl(14 88% 55%) 0%, hsl(22 95% 62%) 100%);
-    --gradient-overlay: linear-gradient(180deg, hsl(215 75% 5% / 0.2) 0%, hsl(215 75% 5% / 0.85) 100%);
-    --gradient-fade: linear-gradient(180deg, transparent 0%, hsl(215 75% 5%) 100%);
+    --gradient-abyss: linear-gradient(180deg, hsl(200 70% 6%) 0%, hsl(195 60% 15%) 100%);
+    --gradient-flame: linear-gradient(135deg, hsl(175 75% 25%) 0%, hsl(175 65% 40%) 100%);
+    --gradient-overlay: linear-gradient(180deg, hsl(200 70% 6% / 0.25) 0%, hsl(200 70% 6% / 0.88) 100%);
+    --gradient-fade: linear-gradient(180deg, transparent 0%, hsl(200 70% 6%) 100%);
+    --gradient-droplet: linear-gradient(160deg, hsl(210 60% 30%) 0%, hsl(175 75% 30%) 100%);
 
     /* Shadows */
-    --shadow-flame: 0 20px 60px -20px hsl(14 88% 55% / 0.5);
-    --shadow-deep: 0 30px 80px -20px hsl(215 75% 5% / 0.4);
+    --shadow-flame: 0 20px 60px -20px hsl(175 75% 25% / 0.45);
+    --shadow-deep: 0 30px 80px -20px hsl(200 70% 6% / 0.4);
 
     /* Sidebar (unused but kept) */
     --sidebar-background: 0 0% 98%;
@@ -70,23 +75,23 @@
   }
 
   .dark {
-    --background: 215 75% 5%;
-    --foreground: 30 40% 98%;
-    --card: 215 65% 9%;
-    --card-foreground: 30 40% 98%;
-    --popover: 215 65% 9%;
-    --popover-foreground: 30 40% 98%;
-    --primary: 30 40% 98%;
-    --primary-foreground: 215 75% 5%;
-    --secondary: 215 50% 14%;
-    --secondary-foreground: 30 40% 98%;
-    --muted: 215 50% 14%;
-    --muted-foreground: 215 20% 65%;
-    --accent: 14 88% 55%;
-    --accent-foreground: 0 0% 100%;
-    --border: 215 40% 18%;
-    --input: 215 40% 18%;
-    --ring: 14 88% 55%;
+    --background: 200 70% 6%;
+    --foreground: 40 30% 96%;
+    --card: 195 60% 10%;
+    --card-foreground: 40 30% 96%;
+    --popover: 195 60% 10%;
+    --popover-foreground: 40 30% 96%;
+    --primary: 40 30% 96%;
+    --primary-foreground: 200 70% 6%;
+    --secondary: 195 50% 14%;
+    --secondary-foreground: 40 30% 96%;
+    --muted: 195 50% 14%;
+    --muted-foreground: 195 20% 65%;
+    --accent: 175 65% 40%;
+    --accent-foreground: 200 70% 6%;
+    --border: 195 40% 18%;
+    --input: 195 40% 18%;
+    --ring: 175 65% 40%;
   }
 }
 
